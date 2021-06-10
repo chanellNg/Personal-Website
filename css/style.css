@@ -233,7 +233,7 @@ header {
     cursor: pointer;
     /* set position to absolute to allow button to be viewable 
     even when navigation list is open (button has been clicked)  */
-    position: absolute;
+    position: fixed;
     /* when set position to absolute-> button will go to the most left 
     -> need to set right 0-> button stick to right */
     right: 1em;
@@ -363,9 +363,9 @@ BUT does not happen for homepage as position absolute for homepage */
     }
 }
 
-/* My services section */
+/* My Education section */
 
-.my-services {
+.my-education {
     background-color: var(--clr-dark);
     background-image: url(../images/Pikachu.jpg);
     /*make sure background image never repeats itself */
@@ -376,13 +376,13 @@ BUT does not happen for homepage as position absolute for homepage */
     text-align: center;
 }
 
-.section__title--services {
+.section__title--education {
     color: var(--clr-accent);
     position: relative;
 }
 
 /* pseudo element for line below title */
-.section__title--services::after {
+.section__title--education::after {
     content: '';
     display: block;
     width: 3em;
@@ -393,20 +393,20 @@ BUT does not happen for homepage as position absolute for homepage */
     opacity: 0.25;
 }
 
-.services {
+.schools {
     margin-bottom: 4em;
 }
 
 /* for each column, prevents line from being too long and centers element when not in column form for smaller screen size */ 
-.service {
+.school {
     /* remember to set margin 0 auto when set max width to center */
     max-width: 500px;
     margin: 0 auto;
 }
 
 @media (min-width: 800px) {
-    .services {
-        display: flex;
+    .schools {
+        /*display: flex;*/
         /* to wrap the text; lines not too long */
         max-width: 1000px;
         /* have to separately set margin left and right to auto so
@@ -417,7 +417,7 @@ BUT does not happen for homepage as position absolute for homepage */
 
     /* '+' looks at the SIBLING (e.g. the second block/right block of the first block) */
     /* first block does not have margin to left */
-    .service + .service {
+    .school + .school {
         margin-left: 2em;
 
     }
