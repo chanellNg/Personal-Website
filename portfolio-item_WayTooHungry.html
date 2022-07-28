@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Needed for scaling window on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chanell Portfolio Website</title>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    
+        <!-- Update these with fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header class="portfolio-header">
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- CHANGE NAV LINKS TO INDEX.HTML#SECTION_NAME TO LINK TO HOMEPAGE SECTIO -->
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#education" class="nav__link">My Education</a></li>
+                    <li class="nav__item"><a href="index.html#experience" class="nav__link">My Experiences</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+   
+            <section class="my-portfolio" id="portfolio-item">
+                <h2 class="section__title section__title--portfolio">UI/UX Group Project: WayTooHungry</h2>
+                <p>The mobile app mockup describes a platform that aims to streamline and optimize the decision making process of where and what to eat. 
+                    By taking into consideration user input, which includes, but not limited to – dietary restrictions, location, budget and preferred cuisine, 
+                    the application proposes food locations that fulfill their needs. 
+                    The platform would also allow groups of people to make a collective decision where everyone’s preferences in the group can be considered before suggestions are even made. 
+                    Thereafter, if the location chosen requires reservations to be made, users would be able to follow through with reservations, which makes the process more efficient.
+                    </p>
+                <p><em>Prototyped using Figma</em></p>
+                <!-- button -->
+                <a href=" https://www.figma.com/proto/Fm3U8z3RBAEEzdFgth3Liq/WayTooHungry?node-id=436%3A46289&starting-point-node-id=436%3A46865" class="btn">See the final mockup here</a>
+
+                <img src="images/waytoohungry.png" class="portfolio-img">
+
+            </section>
+        
+         <!-- Footer -->
+         <footer class="footer">
+            <!-- email address -->
+            <a href="mailto:ngchanell287@gmail.com" class="footer__link">ngchanell287@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/chanellNg">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/chanell-ng/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
